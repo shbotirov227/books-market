@@ -1,4 +1,5 @@
 .Home {
+    overflow: hidden;
     .imgSection {
         margin-bottom: 100px;
         &-left {
@@ -110,6 +111,12 @@
             align-items: center;
             color: #241400;
             margin-right: 50px;
+        }
+    }
+
+    .slick-slider {
+        .slick-track {
+            display: flex;
         }
     }
 }

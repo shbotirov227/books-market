@@ -4,10 +4,13 @@ import { LikeIcon } from "../../assets/icons/icons";
 
 import "./Card.scss";
 
-const Card = ({path, img, price, title, author}) => {
+const Card = ({path, img, salePrice, price, title, author}) => {
     return (
         <Link to={path} className="Card">
             <img src={img} alt="" className="Card-img" />
+			{
+				salePrice ? <span className="Card-salePrice">{salePrice}</span> : undefined
+			}
             <h4 className="Card-price">{price}</h4>
             <span className="Card-title">{title}</span>
             <span className="Card-author">{author}</span>

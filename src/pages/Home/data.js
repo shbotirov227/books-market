@@ -10,6 +10,7 @@ const data = [
         path: "/",
         img: BookImg1,
         price: "300 грн.",
+        salePrice: "379 грн.",
         title: "Порядок в Хаосе",
         author: "Константин Коптелов"
     },
@@ -19,6 +20,7 @@ const data = [
         path: "/",
         img: BookImg2,
         price: "225 грн.",
+        salePrice: "250 грн.",
         title: "Смарагдова книга",
         author: "Керстин Гир"
     },
@@ -28,6 +30,7 @@ const data = [
         path: "/",
         img: BookImg3,
         price: "86 грн.",
+        salePrice: "100 грн.",
         title: "Зося з вулиці Котячої",
         author: "Агнешка Тишка"
     },
@@ -37,6 +40,7 @@ const data = [
         path: "/",
         img: BookImg4,
         price: "214 грн.",
+        salePrice: "254 грн.",
         title: "Мотиватор",
         author: "Наталія Зотова"
     },
@@ -46,6 +50,7 @@ const data = [
         path: "/",
         img: BookImg5,
         price: "778 грн.",
+        salePrice: "810 грн.",
         title: "Без маски",
         author: "Михаил Бурняшев"
     },
@@ -55,6 +60,7 @@ const data = [
         path: "/",
         img: BookImg3,
         price: "86 грн.",
+        salePrice: "100 грн.",
         title: "Зося з вулиці Котячої",
         author: "Агнешка Тишка"
     },

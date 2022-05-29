@@ -50,10 +50,28 @@ const ArrowRight = () => {
     )
 };
 
+const LeftArrow = () => {
+    return (
+        <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 1L1 21.5L22 42" stroke="#4D2900"/>
+        </svg>
+    )
+}
+
+const RightArrow = () => {
+    return (
+        <svg width="23" height="43" viewBox="0 0 23 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L22 21.5L1 42" stroke="#4D2900"/>
+        </svg>
+    )
+}
+
 export  {
     Logo,
     SearchIcon,
     LikeIcon,
     BuyIcon,
-    ArrowRight
+    ArrowRight,
+    LeftArrow,
+    RightArrow,
 }

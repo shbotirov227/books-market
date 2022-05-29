@@ -1,17 +1,57 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Slider from "react-slick";
 
 import Footer from "../../containers/Footer/Footer";
 import Header from "../../containers/Header/Header";
 import Card from "../../components/Card/Card";
 import Img1 from "../../assets/images/img1.png";
-import { ArrowRight } from "../../assets/icons/icons";
+import { ArrowRight, LeftArrow, RightArrow } from "../../assets/icons/icons";
 import data from "./data.js";
 
 import "./Home.scss";
 
 const Home = () => {
+
+    var settings = {
+        dots: true,
+        infinite: false,
+        centerPadding: "100px",
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        prevArrow: <LeftArrow />,
+		nextArrow: <RightArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+        ]
+      };
+
     return (
         <div className="Home container">
             <Header />
@@ -94,19 +134,17 @@ const Home = () => {
                     </div>
 
                     <div className="flex items-start justify-between mb-16">
-                        {data.map(el => {
-                            return <Card key={el.id} path={el.path} img={el.img} price={el.price} title={el.title} author={el.author}/>
-                        })}
+                        {data.map(el => <Card key={el.id} path={el.path} img={el.img} price={el.price} title={el.title} author={el.author}/>)}
                     </div>
                 </div>
 
                 <div className="sales">
                     <h3 className="titleDefault mb-14">Распродажа</h3>
                     
-                    <div className="flex items-start justify-between mb-16">
-                        {data.map(el => {
-                            return <Card key={el.id} path={el.path} img={el.img} price={el.price} title={el.title} author={el.author}/>
-                        })}
+                    <div className="flex items-center justify-between mb-16">
+                        <Slider {...settings} className="container">
+                            {data.map(el => <Card key={el.id} path={el.path} img={el.img} salePrice={el.salePrice} price={el.price} title={el.title} author={el.author}/>)}
+                        </Slider>
                     </div>
                 </div>
 
