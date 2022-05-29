@@ -1,0 +1,55 @@
+.Header {
+    padding: 30px 0;
+    margin-bottom: 100px;
+    &-links {
+        .link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 196.19%;
+            display: flex;
+            align-items: center;
+            color: #241400;
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+    }
+
+    &-inputSection {
+        width: 200px;
+        border-bottom: 1px solid rgba(105, 103, 100, 0.59);
+        input {
+            width: 100%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 196.19%;
+            display: flex;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            background-color: transparent;
+            outline: none;
+            border: none;
+            padding: 3px 5px 3px 30px;
+        }
+
+        .Header-iconSearch {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &-select {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #241400;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+}

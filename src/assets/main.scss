@@ -1,0 +1,20 @@
+@import url("./_normalize.scss");
+
+.App {
+    width: 100%;
+}
+
+.btnDefault {
+    background: #E16A00;
+}
+
+.titleDefault {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 196.19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #241400;
+}
