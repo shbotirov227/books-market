@@ -1,0 +1,18 @@
+.FooterLinks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 196.19%;
+    color: #FFFFFF;
+    
+    &-title {
+        font-size: 18px;
+    }
+    
+    &-link {
+        font-size: 13px;
+    }
+}

@@ -64,6 +64,26 @@ const data = [
         title: "Зося з вулиці Котячої",
         author: "Агнешка Тишка"
     },
+
+    {
+        id: 6,
+        path: "/",
+        img: BookImg1,
+        price: "300 грн.",
+        salePrice: "379 грн.",
+        title: "Порядок в Хаосе",
+        author: "Константин Коптелов"
+    },
+
+    {
+        id: 7,
+        path: "/",
+        img: BookImg4,
+        price: "214 грн.",
+        salePrice: "254 грн.",
+        title: "Мотиватор",
+        author: "Наталія Зотова"
+    },
 ]
 
 export default data;

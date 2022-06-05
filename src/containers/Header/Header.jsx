@@ -7,7 +7,7 @@ import "./Header.scss";
 const Header = () => {
 	return (
 		<div className="Header flex items-center justify-between">
-			<Link className="" to="/"><Logo /></Link>
+			<Link className="" to="/"><Logo fill="#4D2900" /></Link>
 				<ul className="Header-links flex">
 					<li><Link className="link" to="/">Акции</Link></li>
 					<li><Link className="link" to="/">Каталог</Link></li>
@@ -24,7 +24,7 @@ const Header = () => {
 				<LikeIcon styles="mr-4 cursor-pointer" />
 				<BuyIcon styles="mr-5 cursor-pointer" />
 				<select name="" id="" className="Header-select">
-					<option className="Header-option" value="">2 228 грн.</option>
+					<option className="Header-option" value="">2 228 грн.</option>ч
 					<option className="Header-option" value="">3 831 грн.</option>
 					<option className="Header-option" value="">4 876 грн.</option>
 					<option className="Header-option" value="">5 863 грн.</option>

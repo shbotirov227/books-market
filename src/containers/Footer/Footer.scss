@@ -1,0 +1,40 @@
+.Footer {
+    background: #391F00;
+    padding: 60px 0 20px 0;
+
+    &-inner {
+        .telNumber {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 196.19%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+    
+        .telBtn {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 196.19%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #E16A00;
+            border: 1px solid #E16A00;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 196.19%;
+        color: #FFFFFF;
+    }
+}
