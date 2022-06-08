@@ -22,12 +22,12 @@ const Home = () => {
                 <div className="imgSection flex items-center justify-between">
                     <div className="imgSection-left">
                         <h3 className="imgSection-left-title">Киниги от  А до Я</h3>
-                        <p className="imgSection-left-text">В нашем магазине можно найти книгу на любой вкус.<br></br> Большой ассортимент. Приятные цены. Интересные<br></br> сюжеты.</p>
+                        <p className="imgSection-left-text">В нашем магазине можно найти книгу на любой вкус. Большой ассортимент. Приятные цены. Интересные<br></br> сюжеты.</p>
                         <button className="imgSection-left-btn btnDefault">Перейти в каталог</button>
                     </div>
 
                     <div className="imgSection-right">
-                        <Swiper spaceBetween={50}  slidesPerView={1} className="carousel" keyboard>
+                        <Swiper spaceBetween={50} slidesPerView={1} className="carousel" keyboard>
                             <SwiperSlide>
                                 <img className="imgSection-right-img" src={Img1} alt="" />
                                 <div style={{width: "60%", float: "right"}}>
@@ -99,6 +99,12 @@ const Home = () => {
                     <div className="flex items-start justify-between mb-16">
                     {/* <button className="spiwer" onClick={() => swiper.slidePrev()}><LeftArrow /></button> */}
                         <Swiper
+                            breakpoints={{
+                                320: { width: 320, slidesPerView: 2, },
+                                400: { width: 400, slidesPerView: 2, },
+                                640: { width: 640, slidesPerView: 3, },
+                                768: { width: 768, slidesPerView: 3, },
+                            }}
                             spaceBetween={10}
                             className="mySwiper pb-14"
                             slidesPerView={5.9}
@@ -115,7 +121,18 @@ const Home = () => {
                     <h3 className="titleDefault mb-14">Распродажа</h3>
                     
                     <div className="flex items-center justify-between mb-16">
-                        <Swiper spaceBetween={10} className="pb-14"  slidesPerView={5.9} keyboard>
+                        <Swiper
+                            breakpoints={{
+                                320: { width: 320, slidesPerView: 2, },
+                                400: { width: 400, slidesPerView: 2, },
+                                640: { width: 640, slidesPerView: 3, },
+                                768: { width: 768, slidesPerView: 3, },
+                            }}
+                            spaceBetween={10}
+                            className="pb-14"
+                            slidesPerView={5.9}
+                            keyboard
+                        >
                             {data.map(el => <SwiperSlide><Card key={el.id} path={el.path} img={el.img} salePrice={el.salePrice} price={el.price} title={el.title} author={el.author}/></SwiperSlide>)}
                         </Swiper>
                     </div>
@@ -124,7 +141,7 @@ const Home = () => {
 
                 <div>
                     <h3 className="titleDefault mb-14">Каталог</h3>
-                    <div className="flex items-center justify-center relative m-auto flex-wrap max-w-4xl mb-20">
+                    <div className="btnCategorySection flex items-center justify-center relative m-auto flex-wrap max-w-4xl mb-20">
                         <BtnCategory title={[
                             "Книги",
                             "Электронные книги",
@@ -141,7 +158,7 @@ const Home = () => {
 
                 <div>
                     <h3 className="titleDefault mb-14">О магазине</h3>
-                    <div className="flex items-center justify-between mb-20">
+                    <div className="numsSection flex items-center justify-between mb-20">
                         <Nums num="35" title="Филиалов по всей стране" />
                         <Nums num="898" title="Товаров в каталоге" />
                         <Nums num="8659" title="Покупателей" />

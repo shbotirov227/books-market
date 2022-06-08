@@ -52,4 +52,30 @@
         outline: none;
         border: none;
     }
+
+    .burgerBtn {
+        display: none;
+    }
+
+    .modal {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 60px;
+        .Header {
+            &-links {
+                display: none;
+            }
+
+            .burgerBtn {
+                display: block;
+                font-size: 25px;
+            }
+
+            .modal {
+                display: block;
+            }
+        }
+    }
 }

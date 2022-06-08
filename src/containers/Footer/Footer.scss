@@ -37,4 +37,13 @@
         line-height: 196.19%;
         color: #FFFFFF;
     }
+
+    @media only screen and (max-width: 768px) {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
 }

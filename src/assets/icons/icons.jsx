@@ -106,6 +106,24 @@ const YouTube = () => {
     )
 }
 
+const BurgerBtn = ({ classname, onclick }) => {
+    return (
+        <svg className={classname} onClick={onclick} width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="8" width="27" height="3" fill="#241400"/>
+            <rect y="16" width="27" height="3" fill="#241400"/>
+            <rect width="27" height="3" fill="#241400"/>
+        </svg>
+    )
+}
+
+const ExitBtn = ({ classname, onclick }) => {
+    return (
+        <svg className={classname} onClick={onclick} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2"/>
+        </svg>
+    )
+}
+
 export  {
     Logo,
     SearchIcon,
@@ -119,4 +137,6 @@ export  {
     VK,
     Instagram,
     YouTube,
+    BurgerBtn,
+    ExitBtn
 }
