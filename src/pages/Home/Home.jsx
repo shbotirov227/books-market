@@ -14,6 +14,7 @@ import { Keyboard } from "swiper";
 import BtnCategory from "../../components/BtnCategory/BtnCategory";
 import Nums from "../../components/Nums/Nums";
 
+
 const Home = () => {
     return (
         <div className="Home">
